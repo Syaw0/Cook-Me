@@ -1,9 +1,30 @@
 @import "./styleLib.css";
-
-
-
+@import "./button.css";
+@import "./landingpage.css";
+@import "./navbar.css";
+@import "./footer.css";
+@import "./banner.css";
+@import "./recipeLinks.css";
+@import "./navbarSmall.css";
+@import "./recipeCard.css";
+@import "./recipeDetail.css";
+@import "./recipeDetailCard.css";
+@import "./home..css";
+@import "./about.css";
+@import "./apiRef.css";
+@import "./faq.css";
 
 #root{
     width: 100%;
+    position: relative;
 }
+
+
+.green_middle_word{
+    color: var(----tertiary-con);
+}
+.underline_middle_word{
+    text-decoration: underline var(----tertiary-con);
+}
+
 

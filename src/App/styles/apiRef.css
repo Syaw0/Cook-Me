@@ -1,0 +1,58 @@
+#apiRef_con{
+    background-color: var(--onbg);
+    width: 100%;
+}
+
+#apiRef_detail_con{
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem var(--largscale);
+}
+
+
+#apiRef_btn_con{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.apiRefBtn{
+    font-family: "commissioner-semiBold ";
+}
+
+   
+@media only screen and (max-width:1000px) {
+    #apiRef_detail_con{
+        padding: 3rem var(--mediumscale);
+        }
+
+    
+}
+
+
+
+
+@media only screen and (max-width:720px) {
+
+    #apiRef_detail_con{
+        padding: 3rem var(--mediumscale);
+        }
+
+}
+
+
+@media only screen and (max-width:550px) {
+
+    #apiRef_detail_con{
+        padding: 3rem var(--smallscale);
+        }
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+
+}

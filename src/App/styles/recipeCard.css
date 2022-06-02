@@ -1,0 +1,128 @@
+.Card_con{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 16px;
+    height: 30rem;
+    background-color: rgba(255, 220, 195,0.45);
+    box-shadow: var(--shadow1dp);
+    transition: all 0.5s;
+}
+.Card_con:hover{
+    
+    box-shadow: var(--shadow24dp);
+    transform: scale(1.01);
+    transition: all 0.4s;
+}
+
+
+.Card_Imgcon{
+height: 70%;
+width: 100%;
+border-radius: 16px;
+
+}
+
+.Card_information{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+    color: var(--onprimary-con);
+
+}
+
+.Card_information_top{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start
+
+}
+
+.Card_information_title{
+font: var(--headline6);
+font-family: "Fraunces-extraBold";
+}
+
+.Card_information_subTitle{
+padding-top: 0.5rem;
+font: var(--headline7);
+opacity: 0.8;
+font-family: "commissioner-semiBold";
+}
+
+
+.Card_information_bottom{
+display: flex;
+flex-wrap: wrap;
+}
+
+.Card_information_tags{
+
+    font: var(--headline8);
+    font-family: "commissioner-reg";
+    opacity: 0.6;
+    padding: 0rem 0.3rem ;
+    line-height: 12px;
+}
+
+
+
+    
+@media only screen and (max-width:1000px) {
+    .Card_con{
+        height: 28rem;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:720px) {
+    .Card_con{
+
+        height: 25rem;
+
+    }
+    .Card_information_title{
+        font: var(--headline7);
+        font-family: "Fraunces-extraBold";
+        }
+        
+        .Card_information_subTitle{
+        padding-top: 0.5rem;
+        font: var(--headline8);
+        opacity: 0.8;
+        font-family: "commissioner-semiBold";
+        }
+
+        
+}
+
+
+@media only screen and (max-width:550px) {
+
+    .Card_con{
+
+        height: 25rem;
+
+    }
+    
+}
+
+
+@media only screen and (max-width:450px) {
+
+
+}

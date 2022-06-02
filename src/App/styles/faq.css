@@ -1,0 +1,50 @@
+#faq_con{
+    background-color: var(--onbg);
+    width: 100%;
+}
+
+#faq_detail_con{
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem var(--largscale);
+}
+
+
+.linkinfaq{
+    color: var(--onbg-landpage);
+}
+
+@media only screen and (max-width:1000px) {
+    #faq_detail_con{
+        padding: 3rem var(--mediumscale);
+        }
+
+    
+}
+
+
+
+
+@media only screen and (max-width:720px) {
+
+    #faq_detail_con{
+        padding: 3rem var(--mediumscale);
+        }
+
+}
+
+
+@media only screen and (max-width:550px) {
+
+    #faq_detail_con{
+        padding: 3rem var(--smallscale);
+        }
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+
+}

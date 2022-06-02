@@ -35,10 +35,11 @@
  --display2:57px/64px "Fraunces-reg" ; 
  --display3:45px/52px "Fraunces-reg" ; 
     --letterDisplay2:-0.25px ;
+    --headline0:40px/44px "Fraunces-reg" ; 
     --headline1:36px/44px "Fraunces-reg" ; 
     --headline2:32px/40px "Fraunces-reg" ; 
     --headline3:28px/37px "Fraunces-reg" ; 
-    --headline4:24px/32px "Fraunces-reg" ; 
+    --headline4:24px/32px "Fraunces-reg" ;  
     --headline5:22px/28px "Fraunces-reg" ; 
     --headline6:18px/24px "Fraunces-reg" ; 
     --headline7:14px/24px "Fraunces-reg" ; 

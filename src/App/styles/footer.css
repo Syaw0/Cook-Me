@@ -1,0 +1,22 @@
+#footer_con{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: var(--primary-con);
+    color: var(--onprimary-con);
+    width: 100%;
+    box-shadow: var(--shadow24dp);
+    padding: 8px 0px;
+}
+
+#footer_copyRight{
+font: var( --subhead1);
+font-family: "commissioner-bold";
+}
+
+#footer_developer{
+    font: var( --subhead1);
+    font-family: "commissioner-semiBold";
+    color: rgba(48, 20, 0,0.7);
+}

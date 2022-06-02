@@ -1,0 +1,86 @@
+#about_con{
+background-color: var(--onbg);
+width: 100%;
+
+}
+
+#about_detail_con{
+min-height: 100vh;
+width: 100%;
+
+padding: 3rem var(--largscale);
+}
+
+.rare_data_con{
+    background-color: rgba(255, 220, 195,0.45);
+    border-radius: 18px;
+    color:var(--onprimary-con);
+    box-shadow: var( --shadow1dp);
+    padding: 0.5rem;
+    /* height: auto; */
+}
+
+.rare_header{
+    font: var(--headline1);
+    font-family: "Fraunces-bold";
+    padding-bottom: 1.5rem;
+
+}
+
+.rare_con{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin-bottom: 1.5rem;
+}
+
+.rare_con_header{
+    font: var(--headline4);
+    font-family: "Fraunces-bold";
+    padding: 0.5rem 0rem;
+}
+.rare_con_caption{
+    padding: 0.5rem 0rem;
+    font: var(--headline6);
+    font-family: "commissioner-reg";
+}
+
+
+
+
+
+   
+@media only screen and (max-width:1000px) {
+    #about_detail_con{
+        padding: 3rem var(--mediumscale);
+        }
+
+    
+}
+
+
+
+
+@media only screen and (max-width:720px) {
+
+    #about_detail_con{
+        padding: 3rem var(--mediumscale);
+        }
+
+}
+
+
+@media only screen and (max-width:550px) {
+
+    #about_detail_con{
+        padding: 3rem var(--smallscale);
+        }
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+
+}

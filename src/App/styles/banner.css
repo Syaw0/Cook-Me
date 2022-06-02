@@ -1,0 +1,77 @@
+#banner_con{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow1dp);
+    cursor: default;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+#banner_cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:1 ;
+    background-color: var(--primary-con);
+    opacity: 0.8;
+}
+
+#banner_Logo{
+    font: var(--display2);
+    font-family: "Fraunces-Bold";
+    position: relative;
+    z-index:2 ;
+    color: var(--on-surface-variant);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    padding: 4rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    /* opacity: 0.9; */
+}
+
+
+@media only screen and (max-width:720px) {
+    #banner_Logo{
+        font: var(--display3);
+        font-family: "Fraunces-Bold";
+
+        padding: 3rem 0rem;
+
+    }
+
+}
+
+
+@media only screen and (max-width:550px) {
+
+    #banner_Logo{
+        font: var(--headline0);
+        font-family: "Fraunces-Bold";
+
+        padding: 3rem 0rem;
+
+    }
+
+}
+
+
+@media only screen and (max-width:400px) {
+
+    #banner_Logo{
+        font: var(--headline2);
+        font-family: "Fraunces-Bold";
+
+        padding: 2rem 0rem;
+
+    }
+}
