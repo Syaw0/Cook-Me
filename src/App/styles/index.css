@@ -11,13 +11,36 @@
 @import "./recipeDetailCard.css";
 @import "./home..css";
 @import "./about.css";
-@import "./apiRef.css";
 @import "./faq.css";
+@import "./apiRef.css";
+@import "./loading.css";
+@import "./NotFound.css";
 
 #root{
     width: 100%;
     position: relative;
+    background-color: var(--onbg);
 }
+
+#app_con{
+    background-color: var(--onbg);
+    width: 100%;cursor: default;
+}
+a{text-decoration: none;color: inherit;}
+
+.activeNavLink{
+    color:rgba(48, 20, 0,1)    ;
+    text-decoration: underline;
+    font-family: "commissioner-semiBold";
+  }
+
+  .activeNavLink:hover::before{
+    transform: translate(0, 0) scaleX(0);
+  }
+  .deActiveNavLink{
+color:rgba(48, 20, 0,0.6)
+  }
+
 
 
 .green_middle_word{
@@ -27,4 +50,22 @@
     text-decoration: underline var(----tertiary-con);
 }
 
+
+
+::-webkit-scrollbar {
+  width: 1px
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
 

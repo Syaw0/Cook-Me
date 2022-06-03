@@ -11,25 +11,67 @@ align-items: center;
 }
 
 #recipeCard_con{
+    min-height:70vh ;
     width: 100%;
     padding: 3rem var(--largscale);
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 16px;
-    grid-row-gap: 32px;
+    grid-row-gap: 32px; */
     
+    
+    
+}
+
+#recipeCard_con>*{
+    width: calc(100% / 3 - 16px);
+    margin-bottom: 32px;
+    
+}
+
+#preview_con{
+width: 100%;
+padding-top: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#preview_con_text{
+    color: var(--onprimary-con);
+    text-align: center;
+    font: var(--headline2);
+    font-family: "Fraunces-Bold";
+    
+    border: 3px solid rgba(48, 20, 0,0.6);
+    padding: 1rem;
+    border-radius: 10px;
+
 }
 
 
 @media only screen and (max-width:1000px) {
     #recipeCard_con{
         padding: 3rem var(--mediumscale);
-        grid-template-columns: auto auto;
-        grid-column-gap: 32px;
-        grid-row-gap: 32px;
+
         }
 
-    
+        #recipeCard_con>* {
+            width: calc(100% / 2 - 8px);
+            
+        }
+         #preview_con{
+            width: calc(100%);
+            flex: 2 100%;
+            
+        }
+
+         
 }
 
 
@@ -37,11 +79,11 @@ align-items: center;
 
     #recipeCard_con{
         padding: 3rem var(--mediumscale);
-        grid-template-columns: auto auto;
-        grid-column-gap: 16px;
-        grid-row-gap: 24px;
+
         }
 
+         
+        
 }
 
 
@@ -50,16 +92,26 @@ align-items: center;
     #recipeCard_con{
         padding: 3rem var(--smallscale);
         }
-
+        #preview_con_text{
+            color: var(--onprimary-con);
+            text-align: center;
+            font: var(--headline3);
+            font-family: "Fraunces-Bold";}
 }
 
 
 @media only screen and (max-width:450px) {
 
-    #recipeCard_con{
-        grid-template-columns: auto;
-        grid-column-gap: 0px;
-        grid-row-gap: 24px;
+    
+        #recipeCard_con>*{
+            width: calc(100% );
+            margin-bottom: 24px;
         }
+
+        #preview_con_text{
+            color: var(--onprimary-con);
+            text-align: center;
+            font: var(--headline4);
+            font-family: "Fraunces-Bold";}
 
 }

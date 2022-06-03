@@ -9,17 +9,21 @@
 .recipesLinkBtn{
     border: 2px solid var(--ontertiary-con);
     color: var(--ontertiary-con);
-    transition: all 0.6s;
+    transition: all 0.3s;
     font: var(  --headline6);
     margin: 0.2rem 0.2rem;
-}
-
-.recipesLinkBtn:hover{
-    background-color: rgba(227, 231, 175,0.4);
-    transition: all 0.6s;
+    
 }
 
 
+
+.recipeLinkActive{
+background-color: var(--tertiary-con);
+}
+
+.recipeLinkDeActive{
+
+}
 
    
 @media only screen and (max-width:1000px) {

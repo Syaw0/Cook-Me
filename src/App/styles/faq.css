@@ -1,13 +1,15 @@
 #faq_con{
     background-color: var(--onbg);
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
 #faq_detail_con{
     height: auto;
     width: 100%;
     min-height: 100vh;
-    padding: 3rem var(--largscale);
+    padding: 6.5rem var(--largscale);
 }
 
 
@@ -17,7 +19,7 @@
 
 @media only screen and (max-width:1000px) {
     #faq_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
     
@@ -29,7 +31,7 @@
 @media only screen and (max-width:720px) {
 
     #faq_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
 }
@@ -38,7 +40,7 @@
 @media only screen and (max-width:550px) {
 
     #faq_detail_con{
-        padding: 3rem var(--smallscale);
+        padding: 6.5rem var(--smallscale);
         }
 
 }

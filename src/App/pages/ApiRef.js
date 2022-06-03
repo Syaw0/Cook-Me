@@ -2,11 +2,12 @@ import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/footer";
 import Button from "../components/Button";
-
+import NavBar_small from "../components/Navbar_small";
 function ApiRef() {
   return (
     <>
       <div id="apiRef_con">
+      <NavBar_small/>
         <Nav />
         <div id="apiRef_detail_con">
           <div className="rare_data_con">
@@ -20,7 +21,7 @@ function ApiRef() {
                 }
               </p>
             </div>
-            <div id="apiRef_btn_con"><Button inner="API REFERENCE" type="primary apiRefBtn" /></div>
+            <div id="apiRef_btn_con"><Button inner="API REFERENCE" type="primary apiRefBtn" event={()=>{window.location.href="https://www.themealdb.com/api.php"}} /></div>
 
            
           </div>

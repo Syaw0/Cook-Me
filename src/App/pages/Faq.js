@@ -1,11 +1,12 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/footer";
-
+import NavBar_small from "../components/Navbar_small";
 function Faq() {
   return (
     <>
       <div id="faq_con">
+      <NavBar_small/>
         <Nav />
         <div id="faq_detail_con">
           <div className="rare_data_con">
@@ -46,7 +47,7 @@ function Faq() {
             </div>
           </div>
         </div>
-
+        
         <Footer />
       </div>
     </>

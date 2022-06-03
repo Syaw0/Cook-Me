@@ -8,6 +8,14 @@ module.exports={
         path:path.join(__dirname , "./dist"),
         filename: '[name].bundle.js' , 
     },
+    devServer: {
+
+
+    hot: true,
+    port: 3000,
+
+    historyApiFallback: true,
+},
     optimization:{
         minimize:true,
         minimizer:[new TerserPlugin()]

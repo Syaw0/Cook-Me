@@ -1,27 +1,44 @@
 import React from "react";
 import Button from "../components/Button"
+import {useLocation , useNavigate} from "react-router-dom"
+import useStore from "../store/store";
 
-let url  = "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg"
-function RecipeCard() {
+function RecipeCard(props) {
+  let setPageOffest = useStore(state=>state.setPageOffest)
+  
+  let nextUrl =  `/home/${props.catgory}/${props.idMeal}`
+  let navigate = useNavigate()
+  let tags 
+  if(props.tags != null){
+    tags = props.tags.split(",")
+  }
+
   return(
-      <div className="Card_con" >
-        <div className="Card_Imgcon" style={{backgroundImage:`url("${url}")` , backgroundPosition:"center" , backgroundRepeat:"no-repeat" , backgroundSize:"cover" , backgroundOrigin:"content-box"}}></div>
+      <div className="Card_con" onClick={(e)=>{navigate(nextUrl) ; window.scrollTo(0 , 0) ; setPageOffest(e.pageY)}}>
+        <div className="Card_Imgcon" style={{backgroundImage:`url("${props.img}")` , backgroundPosition:"center" , backgroundRepeat:"no-repeat" , backgroundSize:"cover" , backgroundOrigin:"content-box"}}></div>
         <div className="Card_information">
 
         <div  className="Card_information_top">
 
-        <p className="Card_information_title">Baked salmon with fennel & tomatoes</p>
-        <p className="Card_information_subTitle">British</p>
+        <p className="Card_information_title">{props.title}</p>
+        <p className="Card_information_subTitle">{props.reagan}</p>
 
         </div>
 
         <div  className="Card_information_bottom">
 
-        <p className="Card_information_tags">LowCarbs</p>
-        <p className="Card_information_tags">Baking</p>
-        <p className="Card_information_tags">HighFat</p>
-        <p className="Card_information_tags">Keto</p>
-        <p className="Card_information_tags">Paleo</p>
+            {tags != undefined &&
+              tags.map((v , i)=>{
+                return(
+                  <p className="Card_information_tags" key={i} >{v}</p>
+                )
+              })
+            }
+            
+            {tags == undefined &&
+              <p className="Card_information_tags">No Tag Available</p>
+            }
+
 
         </div>
         </div>

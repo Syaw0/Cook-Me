@@ -1,0 +1,81 @@
+#notfound_con{
+    width: 100%;
+    background-color: var(--onbg);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--onprimary-con);
+}
+
+#NotFound{
+    min-height:100vh ;
+    width: 100%;
+    padding: 0rem var(--largscale);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#NotFound>*{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#NotFound_header1{
+font:var(--headline2);
+font-family: "Fraunces-Bold";
+text-decoration: underline;
+}
+#NotFound_header2{
+    font:var(--headline3);
+    font-family: "Fraunces-Bold";
+    }
+
+#NotFound_caption{
+    font:var(--headline5);
+    font-family: "commissioner-semiBold";
+}
+
+
+
+@media only screen and (max-width:1000px) {
+    #NotFound{
+        padding: 0rem var(--mediumscale);
+
+        }
+
+         
+}
+
+
+@media only screen and (max-width:720px) {
+
+    #NotFound{
+        padding: 0rem var(--mediumscale);
+
+        }
+
+         
+        
+}
+
+
+@media only screen and (max-width:550px) {
+
+    #NotFound{
+        padding: 0rem var(--smallscale);
+        }
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+    
+
+}

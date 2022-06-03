@@ -1,13 +1,15 @@
 #apiRef_con{
     background-color: var(--onbg);
     width: 100%;
+    height: 100%;
 }
 
 #apiRef_detail_con{
     height: auto;
     width: 100%;
     min-height: 100vh;
-    padding: 3rem var(--largscale);
+    padding: 6.5rem var(--largscale);
+    
 }
 
 
@@ -16,16 +18,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
 .apiRefBtn{
-    font-family: "commissioner-semiBold ";
+    font-family: "commissioner-bold";
 }
 
    
 @media only screen and (max-width:1000px) {
     #apiRef_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
     
@@ -37,7 +40,7 @@
 @media only screen and (max-width:720px) {
 
     #apiRef_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
 }
@@ -46,7 +49,7 @@
 @media only screen and (max-width:550px) {
 
     #apiRef_detail_con{
-        padding: 3rem var(--smallscale);
+        padding: 6.5rem var(--smallscale);
         }
 
 }

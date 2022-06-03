@@ -1,14 +1,16 @@
 #about_con{
 background-color: var(--onbg);
 width: 100%;
-
+position: relative;
+z-index: 0;
 }
 
 #about_detail_con{
 min-height: 100vh;
 width: 100%;
-
-padding: 3rem var(--largscale);
+position: relative;
+z-index: 0;
+padding: 6.5rem var(--largscale);
 }
 
 .rare_data_con{
@@ -53,7 +55,7 @@ margin-bottom: 1.5rem;
    
 @media only screen and (max-width:1000px) {
     #about_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
     
@@ -65,7 +67,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:720px) {
 
     #about_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
 }
@@ -74,7 +76,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:550px) {
 
     #about_detail_con{
-        padding: 3rem var(--smallscale);
+        padding: 6.5rem var(--smallscale);
         }
 
 }

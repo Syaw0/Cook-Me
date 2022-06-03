@@ -1,11 +1,12 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/footer";
-
+import NavBar_small from "../components/Navbar_small";
 function About() {
   return (
     <>
       <div id="about_con">
+      <NavBar_small/>
         <Nav />
         <div id="about_detail_con">
           <div className="rare_data_con">

@@ -32,11 +32,16 @@ padding: 2rem var(--largscale);
 
 #recipeDetail_random_card_con{
 display: grid;
-grid-template-columns: auto auto auto;
-grid-column-gap: 16px;
-grid-row-gap: 32px;
-}
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+} 
 
+#recipeDetail_random_card_con>*{
+    width: calc(100% / 3 - 16px);
+    margin-bottom: 32px;
+}
     
 @media only screen and (max-width:1000px) {
     #recipeDetailCardCon{
@@ -48,17 +53,18 @@ grid-row-gap: 32px;
             padding: 2rem var(--mediumscale);
                 
             }
-            #recipeDetail_random_card_con{
-                grid-template-columns: auto auto;
-                grid-column-gap: 32px;
-                grid-row-gap: 32px;
-                }
+
                 #recipeDetail_random_title{
                     font: var(--headline1);
                     font-family: "Fraunces-Bold";
 
                 
                 
+                }
+
+                #recipeDetail_random_card_con>*{
+                    width: calc(100% / 2 - 8px);
+                    
                 }
 }
 
@@ -77,11 +83,6 @@ grid-row-gap: 32px;
                 
             }
 
-            #recipeDetail_random_card_con{
-                grid-template-columns: auto auto;
-                grid-column-gap: 16px;
-                grid-row-gap: 24px;
-                }
                 #recipeDetail_random_title{
                     font: var(--headline2);
                     font-family: "Fraunces-Bold";
@@ -108,11 +109,10 @@ grid-row-gap: 32px;
 
 
 @media only screen and (max-width:450px) {
-    #recipeDetail_random_card_con{
-        grid-template-columns: auto;
-        grid-column-gap: 0px;
-        grid-row-gap: 24px;
-        }
+    #recipeDetail_random_card_con>*{
+        width: calc(100%);
+
+    }
         #recipeDetail_random_title{
             font: var(--headline4);
             font-family: "Fraunces-Bold";
