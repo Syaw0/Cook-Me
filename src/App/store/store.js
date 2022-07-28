@@ -44,6 +44,7 @@ const useStore = create((set , get)=>({
 
 
 async function getCategory(query){
+    
 
     try{
     let url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`
@@ -88,4 +89,4 @@ async function getRandom(){
 
 
 
-export default useStore 
+export {useStore as default , getCategory}

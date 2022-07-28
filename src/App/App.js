@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route , Routes ,Outlet} from "react-router-dom";
 import LandingPage from "./pages/LandingPage"
 import Home from "./pages/Home"
@@ -9,6 +9,7 @@ import Faq from "./pages/Faq"
 import RecipeCon from "./components/RecipeCon"
 import PreviewCon from "./components/PreviewCon"
 import NotFound from "./pages/NotFound"
+
 window.addEventListener("resize", () => {
   document.getElementById("root").width = window.innerWidth;
 });
@@ -16,6 +17,7 @@ window.addEventListener("resize", () => {
 
 
 function App() {
+
   return	<>
   	<Routes>
     <Route path="/" element={<Outlet/>} >
